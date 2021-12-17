@@ -32,11 +32,11 @@ import { Hit } from './Hit';
 export const inputContainer = '#search-button';
 export const inputContent = 'Search for products';
 export const keyboardShortcuts = ['/'];
-export const appId = 'latency';
-export const searchApiKey = '6be0576ff61c053d5f9a3225e2a90f76';
+export const appId = '0EXRPAXB56';
+export const searchApiKey = '4350d61521979144d2012720315f5fc6';
 export const hitComponent = Hit;
 export const index = {
-  indexName: 'instant_search',
+  indexName: 'BOPIB',
   searchParameters: {
     analytics: true,
     clickAnalytics: true,
@@ -79,11 +79,11 @@ export const setUserToken = (setToken) => {
 export const sorts = [
   {
     label: 'Price ascending',
-    value: 'instant_search_price_asc',
+    value: 'BOPIB_price_asc',
   },
   {
     label: 'Price descending',
-    value: 'instant_search_price_desc',
+    value: 'BOPIB_price_desc',
   },
 ];
 
@@ -103,31 +103,18 @@ export const sorts = [
 
 export const refinements = [
   {
-    type: 'hierarchical',
-    header: 'Categories',
+    type: 'list',
+    header: 'Category',
     label: 'Category',
     options: {
-      attributes: [
-        'hierarchicalCategories.lvl0',
-        'hierarchicalCategories.lvl1',
-      ],
-      limit: 6,
-      showMore: true,
-    },
-  },
-  {
-    type: 'list',
-    header: 'Brands',
-    label: 'Brand',
-    options: {
-      attribute: 'brand',
+      attribute: 'categories',
       searchable: true,
       showMore: true,
-      limit: 6,
+      limit: 5,
       showMoreLimit: 20,
       translations: {
         showMore: (expanded) =>
-          expanded ? '- View fewer brands' : '+ View more brands',
+          expanded ? '- View fewer Categories' : '+ View more Categories',
       },
     },
   },
@@ -145,6 +132,15 @@ export const refinements = [
       ),
     },
   },
+
+  /* {
+    type: 'refinementList',
+    header: 'Category',
+    label: 'Category',
+    options: {
+      attribute: 'CategoryList',
+    },
+  },*/
 ];
 
 /*
@@ -163,12 +159,12 @@ export const refinements = [
 |
 */
 
-export const suggestionsIndex = {
+/*export const suggestionsIndex = {
   indexName: 'instant_search_demo_query_suggestions',
   searchParameters: {
     hitsPerPage: 6,
   },
-};
+};*/
 
 /*
 |-------------------------------------------------------------------------------
