@@ -33,22 +33,22 @@ export const SearchButton = ({ onClick }) => {
 
 function SearchIcon(props) {
   return (
-    <svg
-      className="uni-SearchButton-Icon"
-      width={20}
-      height={20}
-      viewBox="0 0 20 20"
-      strokeWidth="1.4"
-      {...props}
-    >
-      <path
-        d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-        stroke="currentColor"
+    <span className="uni-SearchButton-Icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none"
-        fillRule="evenodd"
+        stroke="currentColor"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
-    </svg>
+        {...props}
+      >
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+    </span>
   );
 }

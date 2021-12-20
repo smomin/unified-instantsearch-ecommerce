@@ -140,7 +140,7 @@ a[class^='ais-'] {
   border-radius: 3px;
   color: rgba(33, 36, 61, 0.8);
   font-family: inherit;
-  min-height: 54px;
+  height: 100%;
   outline: none;
   padding-left: 56px;
   width: 100%;
@@ -227,7 +227,7 @@ a[class^='ais-'] {
 .ais-RefinementList-checkbox {
   appearance: none;
   background-color: rgba(65, 66, 71, 0.08);
-  border: 1px solid rgba(65, 66, 71, 0.24);
+  border: 1px solid rgba(84, 104, 255, 0.90);
   border-radius: 2px;
   color: var(--algolia-theme-color-primary);
   flex-shrink: 0;

@@ -180,12 +180,11 @@ export const refinements = [
 
 export const styles = {
   colors: {
-    primary: '#d02139',
+    primary: '#5468FF',
     secondary: '#21243d',
   },
   text: {
-    fontFamily: `-apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen,
-ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
+    fontFamily: `Poppins, Arial, sans-serif`,
   },
   breakpoints: {
     sm: 640,

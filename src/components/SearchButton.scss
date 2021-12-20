@@ -1,17 +1,20 @@
 .uni-SearchButton {
-  align-items: center;
-  background-color: #e8e8e8;
+  background-color: #f5f5fa;
   border: 2px solid transparent;
-  border-radius: 20px;
+  border-radius: 4px;
   color: #000;
   cursor: pointer;
   display: flex;
   font: inherit;
   font-weight: 500;
-  height: 40px;
-  padding: 0 12px;
+  height: 48px;
   transition: border-color 100ms ease-out;
   user-select: none;
+  text-decoration: none;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 32px;
   @media (--algolia-theme-breakpoint-sm-max) {
     padding: 0 8px;
     width: 40px;
@@ -19,26 +22,31 @@
   @media screen and (prefers-reduced-motion: reduce) {
     transition: none;
   }
-  &:hover {
-    border: 2px solid var(--algolia-theme-color-primary);
-  }
-  &:active,
-  &:focus {
-    background-color: #e4e4e4;
-    box-shadow: inset 0 2px 2px rgba(100, 100, 100, 0.08);
-    outline: none;
+  @media (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .uni-SearchButton-InputContent {
-  margin-left: 0.5rem;
   @media (--algolia-theme-breakpoint-sm-max) {
     display: none;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    font-family: Poppins,Arial,sans-serif;
+    color: #484c7a;
+    padding-right: 8px;
+  }
+
+  @media (min-width: 700px) {
+    color: #484c7a;
   }
 }
 
 .uni-SearchButton-Shortcut {
   background-color: #fff;
+  visibility: hidden;
   border: 1px solid #cfcfcf;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(100, 100, 100, 0.12);
@@ -48,4 +56,17 @@
   @media (--algolia-theme-breakpoint-sm-max) {
     display: none;
   }
+}
+
+.uni-SearchButton-Icon {
+  color: var(--algolia-theme-color-primary);
+  width: 40px;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 8px 8px 8px 16px;
+  display: -webkit-flex;
+  display: flex;
 }
